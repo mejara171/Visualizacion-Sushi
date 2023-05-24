@@ -22,15 +22,10 @@ public class ItemManager : MonoBehaviour
         if (!sushi1.gameObject.activeSelf && !sushi2.gameObject.activeSelf && !sushi3.gameObject.activeSelf && !sushi4.gameObject.activeSelf && !sushi5.gameObject.activeSelf)
         {
             Button.gameObject.SetActive(true);
+
+            Button2.gameObject.SetActive(true);
         }
 
-        if (!Button.gameObject.activeSelf)
-        {
-
-             Button2.gameObject.SetActive(true);
-
-        }
-        
     }
 
     
