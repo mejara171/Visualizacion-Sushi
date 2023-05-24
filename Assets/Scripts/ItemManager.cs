@@ -7,11 +7,9 @@ public class ItemManager : MonoBehaviour
 {
     [SerializeField] GameObject sushi1, sushi2, sushi3, sushi4, sushi5;
 
-    [SerializeField] GameObject Button;
+    [SerializeField] GameObject Button, Button2;
     
-    [SerializeField] VideoClip factura;
 
-    [SerializeField] VideoManager manager;
 
 
     private void Update()
@@ -23,10 +21,15 @@ public class ItemManager : MonoBehaviour
     {
         if (!sushi1.gameObject.activeSelf && !sushi2.gameObject.activeSelf && !sushi3.gameObject.activeSelf && !sushi4.gameObject.activeSelf && !sushi5.gameObject.activeSelf)
         {
-            manager.PlayVideo(factura);
             Button.gameObject.SetActive(true);
         }
 
+        if (!Button.gameObject.activeSelf)
+        {
+
+             Button2.gameObject.SetActive(true);
+
+        }
         
     }
 
